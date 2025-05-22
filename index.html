@@ -84,16 +84,83 @@
                         <legend>Endereço residêncial</legend>
 
                         <div class="input-wrapper">
-                            <label for="postal-code"></label>
+                            <label for="postal-code">CEP</label>
                             <input 
                                 id="postal-code" 
                                 name="postal-code" 
                                 type="text">
                         </div>
                         <div class="flex">
-                            <div class="input-wrapper"></div>
+                            <div class="input-wrapper flex-2">
+                                <label for="postal-code">Rua</label>
+                                <input 
+                                    id="street-address" 
+                                    name="street-address" 
+                                    type="text"
+                                    value="Rua XYZ"
+                                    disabled>
+                            </div>
+                            <div class="input-wrapper flex-1">
+                                <label for="address-number">Número</label>
+                                <input 
+                                    id="address-number" 
+                                    name="address-number" 
+                                    type="text">
+                            </div>
                         </div>
-                        <div class="flex"></div>
+                        <div class="flex">
+                            <div class="input-wrapper flex-2">
+                                <label for="city">Cidade</label>
+                                <input 
+                                    id="city" 
+                                    name="city" 
+                                    type="text"
+                                    value="Recife">
+                            </div>
+                            <div class="input-wrapper flex-1">
+                                <label for="state">Estado</label>
+                                <input 
+                                    id="state" 
+                                    name="state" 
+                                    type="text"
+                                    value="PE"
+                                    disabled>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="guardian">
+                        <legend>Informações do responsável</legend>
+                    <div class="input-wrapper">
+                        <label for="guardian">Nome do responsável</label>
+                        <input
+                            type="text"
+                            id="guardian"
+                            name="guardian">
+                        <small>
+                            Principal responsável legal e contato de emergência
+                        </small>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="phone">Telefone</label>
+                        <input type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="(81) 9 123-4567">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="email">E-mail</label>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            required>
+                        <div class="error">
+                            <img 
+                                src="./assets/icons/alert-circle.svg"
+                                alt="ícone de alterta vermelho">
+                            <span>Insira um e-mail válido</span>
+                        </div>
+                    </div>
                     </fieldset>
                 </form>
             </div>
